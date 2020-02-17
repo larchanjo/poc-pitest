@@ -1,13 +1,11 @@
 package com.example.pitest;
 
-/**
- * Hello world!
- *
- */
-public class Application
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
-    }
+public class Application {
+
+  public static void main(String[] args) {
+      ProductService service = new ProductService();
+      Product product = service.create("Product B", 55.5, 10);
+      System.out.println(product);
+  }
+
 }
